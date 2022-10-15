@@ -5,7 +5,11 @@
 }
 
 :root {
-    --bg-color: #F9FAFB;
+    --bg-color: #e9ebed;
+}
+
+html {
+    height: 100%;
 }
 
 .wrapper {
@@ -29,17 +33,20 @@
 
 .header {
     background-color: var(--bg-color);
-    height: 30vh;
+    height: calc(100%/3);
     width: inherit;
 }
 
 .body {
-    height: 40vh;
+    height: calc(100%/3);
     width: inherit;
+    background-color: #FFFFFF;
+    box-shadow: 2px 15px 10px rgb(0 0 0 / 0.2);
+    margin-bottom: 15px;
 }
 
 .footer {
     background-color: var(--bg-color);
-    height: 30vh;
+    height: calc(100%/ 3.111);
     width: inherit;
 }
