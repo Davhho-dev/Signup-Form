@@ -4,6 +4,10 @@
     padding: 0px;
 }
 
+:root {
+    --bg-color: #F9FAFB;
+}
+
 .wrapper {
     display: flex;
     justify-content: space-between;
@@ -24,5 +28,18 @@
 }
 
 .header {
-    background-color: #F9FAFB;
+    background-color: var(--bg-color);
+    height: 30vh;
+    width: inherit;
+}
+
+.body {
+    height: 40vh;
+    width: inherit;
+}
+
+.footer {
+    background-color: var(--bg-color);
+    height: 30vh;
+    width: inherit;
 }
