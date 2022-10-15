@@ -92,4 +92,24 @@ input {
     background-color: var(--bg-color);
     height: calc(100%/ 3.111);
     width: inherit;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    font-family: "Josefin Sans";
+}
+
+button {
+    margin-top: 2%;
+    margin-left: 5%;
+    background-color: #596C48;
+    font-size: 1.2rem;
+    color: white;
+    width: 15%;
+    height: 10%;
+    border-radius: 10px;
+}
+
+.footer p {
+    margin-left: 5%;
+    font-size: 1.2rem;
 }
