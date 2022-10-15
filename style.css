@@ -20,5 +20,9 @@
 
 .right-container {
     height: 100vh;
-    width: auto;
+    width: 65vw;
+}
+
+.header {
+    background-color: #F9FAFB;
 }
