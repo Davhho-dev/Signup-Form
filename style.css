@@ -35,7 +35,12 @@ html {
     background-color: var(--bg-color);
     height: calc(100%/3);
     width: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: "Josefin Sans";
 }
+
 
 .body {
     height: calc(100%/3);
