@@ -107,9 +107,15 @@ button {
     width: 15%;
     height: 10%;
     border-radius: 10px;
+    border-style: none;
 }
 
 .footer p {
     margin-left: 5%;
     font-size: 1.2rem;
+}
+
+a:link {
+    text-decoration: none;
+    color: #596C48
 }
