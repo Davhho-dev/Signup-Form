@@ -119,3 +119,7 @@ a:link {
     text-decoration: none;
     color: #596C48
 }
+
+button:hover {
+    cursor: pointer;
+}
