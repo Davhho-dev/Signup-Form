@@ -18,6 +18,10 @@ password.addEventListener("focus", (e) => {
     message.setAttribute("style", "display: block;");
 });
 
+password.addEventListener("blur", (e) => {
+    message.setAttribute("style", "display: none;");
+});
+
 password.addEventListener("keyup", (e) => {
     let char = e.target.value;
     let pwString = "";
