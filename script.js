@@ -63,34 +63,16 @@ form.addEventListener("submit", (e) => {
     }
 });
 
-
 function checkUpperCase(userPassword) {
-    let isUpperCase = false;
-    for(i = 0; i < userPassword.length; i++) {
-        if(userPassword[i] === userPassword[i].toUpperCase()) return true;
-        else isUpperCase = false;
-    }
-    return isUpperCase;
+    return /[A-Z\s]/.test(userPassword);
 }
 
-
 function checkLowerCase(userPassword) {
-    let isLowerCase = false;
-    for(i = 0; i < userPassword.length; i++) {
-        if(userPassword[i] === userPassword[i].toLowerCase()) return true;
-        else isLowerCase = false;
-    }
-    return isLowerCase;
+    return /[a-z\s]/.test(userPassword);
 }
 
 function checkSpecialChar(userPassword) {
-    let charArr = ["!", "@", "#", "$", "?"];
-    for(let i = 0; i < userPassword.length; i++) {
-        for(let j = 0; j < charArr.length; j++) {
-            if(userPassword[i] === charArr[j]) return true;
-        }
-    }
-    return false;
+    return /[!@#$?]/.test(userPassword);
 }
 
 function passwordCompletion(userPassword) {
