@@ -13,7 +13,6 @@ button.addEventListener("click", (e) => {
     }, 50);
 });
 
-
 password.addEventListener("focus", (e) => {
     message.setAttribute("style", "display: block;");
 });

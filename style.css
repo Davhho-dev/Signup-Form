@@ -148,3 +148,32 @@ a:link {
 button:hover {
     cursor: pointer;
 }
+
+@media screen and (max-width: 500px) {
+    .first-paragraph,
+    .second-paragraph {
+        width: 100%;
+        font-size: .5rem;
+        padding-left: 2%;
+    }
+
+    .first-paragraph {
+        line-height: 1rem;
+        margin-bottom: -25%;
+    }
+
+    .body {
+        width: 100%;
+        font-size: .5rem;
+    }
+
+    .body > p {
+        font-size: 1rem;
+    }
+
+    button {
+        font-size: .5rem;
+        width: 30%;
+        height: 25px;
+    }
+}
