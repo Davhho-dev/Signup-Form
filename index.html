@@ -22,30 +22,38 @@
                 <div class="body">
                     <p>Let's do this!</p>
                     <form action="#">
-                        <div class="inputs">
-                            <div>
-                                <label for="first_name">FIRST NAME</label>
-                                <input type="text" id="first_name" name="first_name" required>
+                        <div class="form-wrapper">
+                            <div class="inputs">
+                                <div>
+                                    <label for="first_name">FIRST NAME</label>
+                                    <input type="text" id="first_name" name="first_name" required>
+                                </div>
+                                <div>
+                                    <label for="last_name">LAST NAME</label>
+                                    <input type="text" id="last_name" name="last_name" required>
+                                </div>
+                                <div>
+                                    <label for="email">EMAIL</label>
+                                    <input type="email" id="email" name="email" placeholder="username@something.com" required>
+                                </div>
+                                <div>
+                                    <label for="phone_number">PHONE NUMBER</label>
+                                    <input type="tel" id="phone_number" name="phone_number" placeholder="5555555555" minlength="10" maxlength="10" required>
+                                </div>
+                                <div>
+                                    <label for="user_password">PASSWORD</label>
+                                    <input type="password" id="user_password" name="user_password" minlength="8" maxlength="20" required>
+                                </div>
+                                <div>
+                                    <label for="confirm_userPassword">CONFIRM PASSWORD</label>
+                                    <input type="password" id="confirm_userPassword" name="confirm_userPassword" required>
+                                </div>
                             </div>
-                            <div>
-                                <label for="last_name">LAST NAME</label>
-                                <input type="text" id="last_name" name="last_name">
-                            </div>
-                            <div>
-                                <label for="email">EMAIL</label>
-                                <input type="email" id="email" name="email" placeholder="username@something.com">
-                            </div>
-                            <div>
-                                <label for="phone_number">PHONE NUMBER</label>
-                                <input type="tel" id="phone_number" name="phone_number" placeholder="5555555555" minlength="10" maxlength="10">
-                            </div>
-                            <div>
-                                <label for="user_password">PASSWORD</label>
-                                <input type="password" id="user_password" name="user_password">
-                            </div>
-                            <div>
-                                <label for="confirm_userPassword">CONFIRM PASSWORD</label>
-                                <input type="password" id="confirm_userPassword" name="confirm_userPassword">
+                            <div class="password-requirements">
+                                <p class="lowercase">Must contain one lowercase</p>
+                                <p class="uppercase">Must contain one uppercase</p>
+                                <p class="special-char">Must contain one special character (E.g. ! @ # $ ?)</p>
+                                <p class="minimum-length">Must be at least 8 characters long</p>
                             </div>
                         </div>
                         <div class="btn-container">

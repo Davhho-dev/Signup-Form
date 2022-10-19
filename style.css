@@ -6,6 +6,7 @@
 
 :root {
     --bg-color: #e9ebed;
+    --font: "Josefin Sans";
 }
 
 html {
@@ -43,7 +44,7 @@ html {
 
 .first-paragraph,
 .second-paragraph {
-    font-family: "Josefin Sans";
+    font-family: var(--font);
     font-size: 1.5rem;
     width: 45%;
     padding-left: 5%;
@@ -63,7 +64,7 @@ html {
 }
 
 .body > p {
-    font-family: "Josefin Sans";
+    font-family: var(--font);
     font-size: 1.5rem;
     font-weight: bold;
     margin-left: 5%;
@@ -74,8 +75,8 @@ html {
     margin-left: 5%;
     display: flex;
     flex-wrap: wrap;
-    width: 65%;
-    font-family: "Josefin Sans";
+    width: 50%;
+    font-family: var(--font);
 }
 
 .inputs > div {
@@ -89,6 +90,23 @@ input {
     height: 30px;
 }
 
+.form-wrapper {
+    display: flex;
+}
+
+.password-requirements {
+    display: none;
+    width: 25%;
+    height: 200px;
+    border: 2px solid black;
+    font-family: var(--font);
+    color: red;
+}
+
+.password-requirements > p {
+    margin: 5%;
+}
+
 /* #first_name:invalid {
     border: 1px solid red;
 } */
@@ -97,7 +115,7 @@ input {
     background-color: var(--bg-color);
     height: calc(100%/ 3.111);
     width: inherit;
-    font-family: "Josefin Sans";
+    font-family: var(--font);
     padding-top: 5%;
 }
 
