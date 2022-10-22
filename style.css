@@ -107,10 +107,6 @@ input {
     margin: 5%;
 }
 
-/* #first_name:invalid {
-    border: 1px solid red;
-} */
-
 .footer {
     background-color: var(--bg-color);
     height: calc(100%/ 3.111);
@@ -149,54 +145,107 @@ button:hover {
     cursor: pointer;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 767px) {
     .first-paragraph,
     .second-paragraph {
         width: 100%;
-        font-size: .5rem;
-        padding: 2%;
-    }
-
-    .first-paragraph {
-        line-height: 1rem;
-        margin-bottom: -25%;
-    }
-
-    .body {
-        width: 100%;
-        font-size: .5rem;
-    }
-
-    input {
-        height: 20px;
-        margin-bottom: 5%;
-        font-size: .5rem;
+        font-size: calc(.75rem + 1vw);
     }
 
     .body > p {
-        font-size: 1rem;
+        font-size: calc(.75rem + 1vw);
         margin-bottom: 5%;
-        margin-left: 5.352px;
     }
-    
+
+    .inputs {
+        font-size: calc(.4rem + 1vw);
+        gap: 3px;
+    }
+
+    input {
+        font-size: .5rem;
+        height: auto;
+        width: 100%;
+    }
+
     button {
+        margin-top: 10%;
         font-size: .5rem;
-        width: 30%;
-        height: 25px;
-    }
-
-    .footer p {
-        margin-left: 5.352px;
-        font-size: .5rem;
-    }
-
-    .password-requirements {
-        margin-top: 50%;
         width: 100px;
-        height: 100px;
+        height: 25px;
+        border-radius: 5px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .first-paragraph,
+    .second-paragraph {
+        width: 100%;
+        font-size: calc(.75rem + 1vw);
     }
 
-    .password-requirements > p {
-        margin: 5%;
+    .body > p {
+        font-size: calc(.75rem + 1vw);
+        margin-bottom: 3%;
+    }
+
+    .inputs {
+        font-size: calc(.45rem + 1vw);
+        gap: 3px;
+        width: 100%;
+    }
+
+    .inputs > div {
+        width: 225px;
+    }
+
+    input {
+        font-size: calc(.5rem + 1vw);
+        height: auto;
+        width: 100%;
+    }
+
+    button {
+        margin-top: 2%;
+        font-size: 1rem;
+        width: 25%;
+        height: 50px;
+        border-radius: 5px;
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 2300px) {
+    .first-paragraph,
+    .second-paragraph {
+        width: 100%;
+        font-size: 1.5rem;
+    }
+    .body > p {
+        font-size: calc(.75rem + 1vw);
+        margin-bottom: 3%;
+    }
+
+    .inputs {
+        font-size: calc(.45rem + 1vw);
+        gap: 3px;
+        width: 100%;
+    }
+
+    .inputs > div {
+        width: 225px;
+    }
+
+    input {
+        font-size: calc(.5rem + 1vw);
+        height: auto;
+        width: 100%;
+    }
+
+    button {
+        margin-top: 2%;
+        font-size: 1rem;
+        width: 25%;
+        height: 50px;
+        border-radius: 5px;
     }
 }
