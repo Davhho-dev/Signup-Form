@@ -154,7 +154,7 @@ button:hover {
     .second-paragraph {
         width: 100%;
         font-size: .5rem;
-        padding-left: 2%;
+        padding: 2%;
     }
 
     .first-paragraph {
@@ -167,13 +167,36 @@ button:hover {
         font-size: .5rem;
     }
 
-    .body > p {
-        font-size: 1rem;
+    input {
+        height: 20px;
+        margin-bottom: 5%;
+        font-size: .5rem;
     }
 
+    .body > p {
+        font-size: 1rem;
+        margin-bottom: 5%;
+        margin-left: 5.352px;
+    }
+    
     button {
         font-size: .5rem;
         width: 30%;
         height: 25px;
+    }
+
+    .footer p {
+        margin-left: 5.352px;
+        font-size: .5rem;
+    }
+
+    .password-requirements {
+        margin-top: 50%;
+        width: 100px;
+        height: 100px;
+    }
+
+    .password-requirements > p {
+        margin: 5%;
     }
 }
