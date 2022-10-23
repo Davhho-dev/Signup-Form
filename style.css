@@ -145,107 +145,192 @@ button:hover {
     cursor: pointer;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767px) and (orientation: portrait) {
+    .wrapper {
+        flex-direction: column;
+    }
+
+    .left-container {
+        height: 10vh;
+        width: 100vw;
+    }
+    .right-container {
+        height: 90vh;
+        width: 100vw;
+    }
+    
+    .header,
+    .footer {
+        width: 100vw;
+        height: 20vh;
+    }
+
     .first-paragraph,
     .second-paragraph {
         width: 100%;
-        font-size: calc(.75rem + 1vw);
-    }
-
-    .body > p {
-        font-size: calc(.75rem + 1vw);
-        margin-bottom: 5%;
-    }
-
-    .inputs {
-        font-size: calc(.4rem + 1vw);
-        gap: 3px;
-    }
-
-    input {
-        font-size: .5rem;
-        height: auto;
-        width: 100%;
-    }
-
-    button {
-        margin-top: 10%;
-        font-size: .5rem;
-        width: 100px;
-        height: 25px;
-        border-radius: 5px;
-    }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1023px) {
-    .first-paragraph,
-    .second-paragraph {
-        width: 100%;
-        font-size: calc(.75rem + 1vw);
-    }
-
-    .body > p {
-        font-size: calc(.75rem + 1vw);
-        margin-bottom: 3%;
-    }
-
-    .inputs {
-        font-size: calc(.45rem + 1vw);
-        gap: 3px;
-        width: 100%;
-    }
-
-    .inputs > div {
-        width: 225px;
-    }
-
-    input {
-        font-size: calc(.5rem + 1vw);
-        height: auto;
-        width: 100%;
-    }
-
-    button {
-        margin-top: 2%;
         font-size: 1rem;
-        width: 25%;
-        height: 50px;
-        border-radius: 5px;
+        line-height: 100%;
+    }
+
+    .body {
+        width: 100vw;
+        height: 50vh;
+    }
+
+    .body > p {
+        margin-top: 2%;
+        font-size: 1.5rem;
+    }
+    .inputs {
+        margin-top: 2%;
+        font-size: .75rem;
+    }
+
+    input {
+        font-size: .75rem;
+        margin-bottom: 5%;
+        width: 100%;
+    }
+
+    button {
+        font-size: .75rem;
+        width: 35%;
+    }
+
+    .footer > p {
+        font-size: 1rem;
     }
 }
 
-@media screen and (min-width: 1024px) and (max-width: 2300px) {
+@media screen and (min-width: 768px) and (max-width: 1023px) and (orientation: portrait) {    
+    .header {
+        height: 25%;
+    }
+    
+    .body {
+        height: 50%;
+    }
+
+    .footer {
+        height: 23.7%;
+    }
+
+    .first-paragraph,
+    .second-paragraph,
+    .footer > p {
+        width: 75%;
+        font-size: 1.5rem;
+    }
+
+    .body > p {
+        font-size: 1.5rem;
+        margin-bottom: 2%;
+    }
+
+    .inputs,
+    input {
+        font-size: .75rem;
+    }
+
+    .inputs {
+        gap: 10px;
+    }
+
+    button {
+        font-size: .75rem;
+        width: 35%;
+        margin-top: 10%;
+    }
+
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1439px) and (orientation: portrait) {
+    .header {
+        height: 25%;
+    }
+    
+    .body {
+        height: 50%;
+    }
+
+    .footer {
+        height: 23.7%;
+    }
+
     .first-paragraph,
     .second-paragraph {
         width: 100%;
         font-size: 1.5rem;
     }
+
     .body > p {
-        font-size: calc(.75rem + 1vw);
-        margin-bottom: 3%;
+        margin-bottom: 5%;
     }
 
     .inputs {
-        font-size: calc(.45rem + 1vw);
-        gap: 3px;
+        gap: 10px;
+    }
+
+    button {
+        font-size: .75rem;
+        width: 25%;
+        margin-top: 5%;
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1439px) and (orientation: landscape) {
+    .header {
+        height: 25%;
+    }
+    
+    .body {
+        height: 50%;
+    }
+
+    .footer {
+        height: 23.7%;
+    }
+
+    .first-paragraph,
+    .second-paragraph {
         width: 100%;
+        font-size: 1.5rem;
     }
 
-    .inputs > div {
-        width: 225px;
+    .body > p {
+        margin-bottom: 5%;
     }
 
-    input {
-        font-size: calc(.5rem + 1vw);
-        height: auto;
+    .inputs {
+        gap: 10px;
+    }
+
+    button {
+        font-size: .75rem;
+        width: 25%;
+        margin-top: 5%;
+    }
+}
+
+@media screen and (min-width: 1440px) and  (max-width: 2559px) and (orientation: landscape) {
+    .first-paragraph,
+    .second-paragraph {
+        width: 75%;
+        line-height: 2.5rem;
+    }
+
+    .inputs {
         width: 100%;
     }
 
     button {
-        margin-top: 2%;
+        margin-top: 5%;
+        width: 20%;
         font-size: 1rem;
-        width: 25%;
-        height: 50px;
-        border-radius: 5px;
     }
+
+    .footer > p {
+        font-size: 1.5rem;
+    }
+    
 }
